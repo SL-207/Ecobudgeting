@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
+//Todo: cumulative budget, local data
 public class MainActivity extends AppCompatActivity {
     Button formBtn, settingsBtn;
-    public static int ovenConsumptionfan = 10, ovenConsumptionfanless = 10, elecPrice = 10, gasPrice = 10;
+    public static int ovenConsumptionfan, ovenConsumptionfanless, elecPrice, gasPrice, hobConsumption;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

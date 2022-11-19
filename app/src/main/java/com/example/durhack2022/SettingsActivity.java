@@ -29,7 +29,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         sFieldOne.setText("" + MainActivity.ovenConsumptionfan);
         sFieldTwo.setText("" + MainActivity.ovenConsumptionfanless);
-        sFieldThree.setText("" + MainActivity.ovenConsumptionfan);
+        sFieldThree.setText("" + MainActivity.hobConsumption);
         sFieldFour.setText("" + MainActivity.gasPrice);
         sFieldFive.setText("" + MainActivity.elecPrice);
         sFieldOne.setSelectAllOnFocus(true);
@@ -43,6 +43,7 @@ public class SettingsActivity extends AppCompatActivity {
                 Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
                 MainActivity.ovenConsumptionfan = Integer.parseInt(((TextView) sFieldOne).getText().toString());
                 MainActivity.ovenConsumptionfanless = Integer.parseInt(((TextView) sFieldTwo).getText().toString());
+                MainActivity.hobConsumption = Integer.parseInt(((TextView) sFieldThree).getText().toString());
                 MainActivity.gasPrice = Integer.parseInt(((TextView) sFieldFour).getText().toString());
                 MainActivity.elecPrice = Integer.parseInt(((TextView) sFieldFive).getText().toString());
                 Toast.makeText(SettingsActivity.this, "Settings saved", Toast.LENGTH_SHORT).show();
