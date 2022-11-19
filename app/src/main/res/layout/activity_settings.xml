@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/settingsTitle"
-        android:text="Oven consumption (with fan)"
+        android:text="Oven consumption with fan"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"/>
@@ -32,20 +32,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/questionOne"
-        android:textColor="@color/black"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
+        android:background="#555555"
         android:padding="10dp"
-        android:background="#555555"/>
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/questionTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/fieldOne"
-        android:text="Oven consumption (without fan)"
+        android:text="Oven consumption without fan"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"/>
@@ -60,9 +60,81 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:padding="10dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:background="#555555"/>
+
+
+    <TextView
+        android:id="@+id/questionThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldTwo"
+        android:layout_centerHorizontal="true"
+        android:text="Hob Consumption"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/fieldThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionThree"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#555555"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:id="@+id/questionFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldThree"
+        android:layout_centerHorizontal="true"
+        android:text="Gas Price ($)"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/fieldFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionFour"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#555555"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:id="@+id/questionFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fieldFour"
+        android:layout_centerHorizontal="true"
+        android:text="Electricity price ($)"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/fieldFive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionFive"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#555555"
+        android:padding="10dp"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/saveBtn"
@@ -71,7 +143,7 @@
         android:text="Save"
         android:backgroundTint="@color/teal_700"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/fieldTwo"
+        android:layout_below="@+id/fieldFive"
         />
 
 
