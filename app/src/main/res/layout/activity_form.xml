@@ -6,4 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".FormActivity">
 
+
+    <TextView
+        android:id="@+id/ovenTimeText"
+        android:layout_width="143dp"
+        android:layout_height="39dp"
+
+        android:text="Oven time:"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="81dp" />
+
+    <TextView
+        android:id="@+id/hobTimeText"
+        android:layout_width="142dp"
+        android:layout_height="39dp"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="120dp"
+        android:text="Hob Time"/>
+
+
+    <EditText
+        android:id="@+id/ovenEditText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:hint="Enter time here"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <EditText
+        android:id="@+id/hobEditText"
+        android:hint="Enter time here"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="120dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
