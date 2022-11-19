@@ -1,59 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FormActivity">
-
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/ovenTimeText"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="13dp"
+        android:textStyle="bold"
         android:layout_marginStart="53dp"
-        android:layout_marginTop="81dp"
-        android:text="Oven time:"
-        app:layout_constraintBottom_toTopOf="@+id/hobTimeText"
-        app:layout_constraintEnd_toStartOf="@+id/ovenEditText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/hobTimeText"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginBottom="572dp"
-        android:text="Hob Time"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/hobEditText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ovenTimeText" />
-
+        android:layout_marginTop="80dp"
+        android:text="Oven time:" />
 
     <EditText
         android:id="@+id/ovenEditText"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="87dp"
-        android:hint="Enter time here"
-        app:layout_constraintBottom_toTopOf="@+id/hobEditText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ovenTimeText"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_toRightOf="@+id/ovenTimeText"
+        android:hint="Enter time" />
+
+    <TextView
+        android:id="@+id/hobTimeText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="10dp"
+        android:padding="13dp"
+        android:text="Hob Time"
+        android:layout_below="@+id/ovenTimeText"
+        />
 
     <EditText
         android:id="@+id/hobEditText"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="85dp"
-        android:layout_marginBottom="571dp"
-        android:hint="Enter time here"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/hobTimeText"
-        app:layout_constraintTop_toBottomOf="@+id/ovenEditText" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="87dp"
+        android:layout_toRightOf="@id/hobTimeText"
+        android:layout_below="@+id/ovenEditText"
+        android:hint="Enter time" />
+
+    <Button
+        android:id="@+id/formSubmitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginStart="53dp"
+        android:layout_below="@+id/hobTimeText"
+        />
+
+</RelativeLayout>
+
